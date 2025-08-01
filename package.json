@@ -1,6 +1,6 @@
 {
     "name": "zippy-shared-lib",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "type": "module",
     "main": "./dist/zippy-shared-lib.umd.js",
     "module": "./dist/zippy-shared-lib.es.js",
@@ -10,6 +10,7 @@
     ],
     "exports": {
         ".": {
+            "types": "./dist/index.d.ts",
             "import": "./dist/zippy-shared-lib.es.js",
             "require": "./dist/zippy-shared-lib.umd.js"
         }
