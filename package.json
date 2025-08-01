@@ -1,0 +1,24 @@
+{
+    "name": "zippy-shared-lib",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "./dist/zippy-shared-lib.umd.js",
+    "module": "./dist/zippy-shared-lib.es.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/zippy-shared-lib.es.js",
+            "require": "./dist/zippy-shared-lib.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "typescript": "~5.8.3",
+        "vite": "^7.0.4",
+        "vite-plugin-dts": "^3.7.1"
+    }
+}
